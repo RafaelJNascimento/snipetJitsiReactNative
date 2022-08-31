@@ -54,20 +54,6 @@ function App(props) {
         onConferenceWillJoin={() => setIsLoading(true)}
         style={styles.container}
       />
-      <Modal
-        animationType="fade"
-        transparent={false}
-        visible={isLoading}
-        onRequestClose={() => { }}>
-        <View style={styles.containerLoading}>
-          <View style={styles.boxWrapper}>
-            <Text style={styles.textLoading}>
-              {"esperando o servidor"}
-            </Text>
-            <ActivityIndicator color={'#000'} />
-          </View>
-        </View>
-      </Modal>
     </View>
   )
 }
